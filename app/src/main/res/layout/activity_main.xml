@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context="com.example.dell.bloodbank.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/add_donor_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/addDonorButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/donor" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/addDonorButton"
+                android:layout_alignStart="@+id/addDonorButton"
+                android:layout_below="@+id/addDonorButton"
+                android:text="Click  To Add Donor"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_donor_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/viewDonorButtton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="false"
+                android:layout_margin="4dp"
+                android:src="@drawable/view_donor" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/viewDonorButtton"
+                android:layout_alignStart="@+id/viewDonorButtton"
+                android:layout_below="@+id/viewDonorButtton"
+                android:text="Click  To View Donor"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>
